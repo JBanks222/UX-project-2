@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <h1>Our Amazing Products</h1>
+        <h2>Shop Now and Save</h2>
+    </header>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+        <div class="slide">
+            <img src="My files/Linux files/UX project 2/images/flowers-assorted.jpg" alt="Flower 1">
+            <div class="text-block">Amazing Flower 1</div>
+        </div>
+        <div class="slide">
+            <img src="My files/Linux files/UX project 2/images/sun-flowers.webp" alt="Flower 2">
+            <div class="text-block">Amazing Flower 2</div>
+        </div>
+        <div class="slide">
+            <img src="My files/Linux files/UX project 2/images/flower-field.jpg" alt="Flower 3">
+            <div class="text-block">Amazing Flower 3</div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products">
+        <div class="product">
+            <img src="My files/Linux files/UX project 2/images/watches.jpg" alt="Product 1">
+            <p>Product 1 Description</p>
+            <button class="add-to-bag" onmouseover="hoverAddToBag(this)" onmouseout="resetAddToBag(this)" onclick="openModal()">Add to Bag</button>
+        </div>
+        <div class="product">
+            <img src="My files/Linux files/UX project 2/images/watch-and-pen.jpg" alt="Product 2">
+            <p>Product 2 Description</p>
+            <button class="add-to-bag" onmouseover="hoverAddToBag(this)" onmouseout="resetAddToBag(this)" onclick="openModal()">Add to Bag</button>
+        </div>
+        <div class="product">
+            <img src="My files/Linux files/UX project 2/images/watch-and-suit.webp" alt="Product 3">
+            <p>Product 3 Description</p>
+            <button class="add-to-bag" onmouseover="hoverAddToBag(this)" onmouseout="resetAddToBag(this)" onclick="openModal()">Add to Bag</button>
+        </div>
+    </section>
+
+    <!-- Modal Window -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Item added to your bag!</p>
+            <button onclick="closeModal()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">ACCOUNT</a></li>
+                <li><a href="#">SUBSCRIBE</a></li>
+                <li><a href="#">MEMBER CARE</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+        <p>Full Name</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
